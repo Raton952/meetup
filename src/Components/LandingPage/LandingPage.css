@@ -1,0 +1,75 @@
+.landingContainer {
+    background-image: url("../../assets/images/backgroundimage.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.headerLeft h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+
+.headerLeft p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+.getItBtn {
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    border-radius: 3.33594px;
+    width: 120px;
+    height: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.virtual_text{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.virtual_text::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    margin-top: 10px;
+}
+
+.playingGameHead{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 33px;
+    
+}
+.playingRight p{
+    color: #ffffffd9;
+}
+
+.clientsayContainer{
+    background-image: url("../../assets/images/cliendsaybackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.reviewContainer{
+    margin-top: -50px;
+}
