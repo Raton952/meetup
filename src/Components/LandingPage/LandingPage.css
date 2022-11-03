@@ -56,8 +56,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
-    line-height: 33px;
-    
+    line-height: 33px; 
 }
 .playingRight p{
     color: #ffffffd9;
@@ -68,8 +67,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    border-radius: 15px;
 }
 .reviewContainer{
-    margin-top: -50px;
+    margin-top: -90px;
+}
+.reviewContent{
+    font-family: 'Inter', sans-serif;
+}
+.companyValueHead{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 33px;
+    line-height: 33px; 
+}
+@media screen and (max-width:639px) {
+    .reviewContainer{
+        margin-top: 20px;
+    }
 }
