@@ -12,6 +12,7 @@ import cli3 from "../../assets/images/cli3.png";
 const LandingPage = () => {
   return (
     <div className="landingContainer w-full">
+      <h1>hi</h1>
       <NavBar />
       {/* hero section start */}
       <div className="container mx-auto flex flex-col sm:flex-row items-center mt-[90px]">
