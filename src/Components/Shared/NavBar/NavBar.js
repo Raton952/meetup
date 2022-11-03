@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css"
 
 const NavBar = () => {
@@ -43,40 +44,36 @@ const NavBar = () => {
           >
             <ul className="flex flex-col items-center lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <a
+                <button
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                  
                   <span className="ml-2 active nav-text">Home</span>
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
+                <Link to="/join-meeting"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                   
-                  <span className="ml-2">Company</span>
-                </a>
+                  <span className="ml-2">Join Meeting</span>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <button
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                   
                   <span className="ml-2">Features</span>
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
+                <button
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                   
                   <button className="rounded-full joinBtn">Join</button>
-                </a>
+                </button>
               </li>
             </ul>
           </div>

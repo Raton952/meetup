@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import JoinMeeting from "./Components/JoinMeeting/JoinMeeting";
 import LandingPage from "./Components/LandingPage/LandingPage";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <BrowserRouter>
     <Routes>
         <Route path='/' element={<LandingPage />} />
+        <Route path='/join-meeting' element={<JoinMeeting />} />
     </Routes>
   </BrowserRouter>
   );

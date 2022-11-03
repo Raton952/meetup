@@ -8,6 +8,7 @@ import playGame2 from "../../assets/images/playinggame2.png";
 import cli1 from "../../assets/images/cli1.png";
 import cli2 from "../../assets/images/cli2.png";
 import cli3 from "../../assets/images/cli3.png";
+import img from '../../assets/images/img.png';
 
 const LandingPage = () => {
   return (
@@ -165,18 +166,21 @@ const LandingPage = () => {
 
       {/* company valus */}
 
-      <div className="container mx-auto mt-24">
-        <div className="grid grid-cols-2 gap-3">
+      <div className="container px-4 sm:px-0 mx-auto py-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
           <div className="text-white">
-            <h2 className="companyValueHead mb-5">Our company values culture</h2>
+            <h2 className="companyValueHead mb-5">
+              Our company values culture
+            </h2>
             <p className="reviewContent text-lg">
               We specialize in creating visual identities for products and
               branda in your company.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-3 text-white">
-            <div className="">
+          <div className="grid grid-cols-2 gap-3 text-white mt-10 sm:mt-0">
+            <div className="text-center">
               <svg
+              className="mx-auto"
                 width="28"
                 height="28"
                 viewBox="0 0 28 28"
@@ -316,10 +320,11 @@ const LandingPage = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <p className="text-md">Be Sincere</p>
+              <p className="text-md font-semibold pt-1">Be Sincere</p>
             </div>
-            <div>
+            <div className="text-center">
               <svg
+              className="mx-auto"
                 width="31"
                 height="20"
                 viewBox="0 0 31 20"
@@ -346,9 +351,11 @@ const LandingPage = () => {
                   </linearGradient>
                 </defs>
               </svg>
+              <p className="text-md font-semibold pt-1">Stronger together</p>
             </div>
-            <div>
+            <div className="text-center">
               <svg
+              className="mx-auto"
                 width="24"
                 height="21"
                 viewBox="0 0 24 21"
@@ -398,9 +405,11 @@ const LandingPage = () => {
                   </linearGradient>
                 </defs>
               </svg>
+              <p className="text-md font-semibold pt-1">Keep it simple</p>
             </div>
-            <div>
+            <div className="text-center">
               <svg
+              className="mx-auto"
                 width="26"
                 height="27"
                 viewBox="0 0 26 27"
@@ -469,7 +478,25 @@ const LandingPage = () => {
                   </linearGradient>
                 </defs>
               </svg>
+              <p className="text-md font-semibold pt-1">Take intelligent risks</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* explore */}
+      <div className="container px-4 sm:px-0 mx-auto pb-10">
+        <div className="p-10 flex items-center gap-8 rounded-lg border border-[rgba(185,54,245,0.3)] bg-gradient-to-b from-[rgba(170,20,240,0.2)] to-[rgba(185,54,245,0.08)]">
+          <div className="sm:w-1/2">
+            <h2 className="companyValueHead text-white">Explore product in new way</h2>
+            <p className="reviewContent text-lg text-white pt-4">We specialize in creating visual identities for products and branda in your company.</p>
+            <div className="flex items-center gap-3 mt-6">
+              <input type="email" placeholder="Your Email" className="h-10 w-[200px] text-white rounded-sm border border-[rgba(185,54,245,0.5)] px-2 bg-[rgba(185,54,245,0.2)] outline-none placeholder:text-[rgba(224,163,201,0.5)]" />
+              <button type="submit" className="leading-10 font-semibold text-white rounded-sm px-7 getItBtn">Start</button>
+            </div>
+          </div>
+          <div className="sm:w-1/2 hidden sm:block">
+            <img src={img} className="w-full" alt="" />
           </div>
         </div>
       </div>
